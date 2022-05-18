@@ -1,0 +1,55 @@
+@font-face {
+	font-family: Calibri;
+    src: url('Calibri Regular.ttf'), url('Calibri Light.ttf') format('truetype');
+}
+
+
+
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.section-1 {
+	padding: 1rem 0;
+	font-family: Calibri;
+	width: 70%;
+	background-color: #f2f2f2;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.section-1 h1 {
+	padding: 0rem 0rem 1rem 0rem;
+}
+
+.container {
+	display: grid;
+	grid: auto-flow / 1fr 1fr 1fr;
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	transition: transform .3s;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.item:hover {
+	transform: scale(1.04);
+}
+.item h4 {
+	padding: 1.5rem 0 .25rem 0;
+}
+.item p {
+	padding: .25rem 0 1.5rem 0;
+}
